@@ -69,9 +69,10 @@
 <body>
 
 <!-- HERO SECTION -->
-<section class="hero text-center text-lg-start">
+<section class="hero text-center text-lg-start position-relative">
   <div class="overlay"></div>
-  <div class="container-fluid hero-content">
+  <div class="bg-black opacity-50 position-absolute top-0 bottom-0 start-0 end-0"></div>
+  <div class="container-fluid hero-content position-relative z-1">
   <div class="text-center font-bold mb-4">
     <div class="w-100 d-flex justify-content-center">
       <img src="/logo.webp" class="d-block logo mb-4" alt="Coco House Logo"/>
@@ -113,19 +114,14 @@
             <div class="invalid-feedback">Please enter your phone number.</div>
           </div>
           <div class="mb-3">
-            <label class="form-label">Zip Code *</label>
+            <label class="form-label">Pin Code *</label>
             <input type="text" name="zip" class="form-control" required>
-            <div class="invalid-feedback">Please enter your zip code.</div>
+            <div class="invalid-feedback">Please enter your Pin code.</div>
           </div>
           <div class="mb-3">
-            <label class="form-label">Country *</label>
-            <select name="country" class="form-select" required>
-              <option value="">Select a Country</option>
-              <option value="India">India</option>
-              <option value="USA">USA</option>
-              <option value="UK">UK</option>
-            </select>
-            <div class="invalid-feedback">Please select a country.</div>
+            <label class="form-label">Address *</label>
+            <textarea name="address" placeholder="Your address"></textarea>
+            <div class="invalid-feedback">Please Provide a delivery address.</div>
           </div>
           <button type="submit" class="btn btn-success w-100">REQUEST FREE SAMPLE</button>
         </form>
@@ -189,7 +185,7 @@
 </section>
 
 <section class="hero p-0 position-relative">
-  <div class="bg-black opacity-50 position-absolute top-0 bottom-0 start-0 end-0 z-n1"></div>
+  <div class="bg-black opacity-50 position-absolute top-0 bottom-0 start-0 end-0"></div>
   <div class="container position-relative z-1">
     <div class="row">
       <div class="col-md-8 d-flex flex-column justify-content-center">
